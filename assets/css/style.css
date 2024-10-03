@@ -11,11 +11,15 @@
     padding: 0px;
     text-decoration: none;
     list-style: none;
-    /* background-color: #21201e; */
+   
     color: white;
 }
 body{
     font-family: "poppins";
+}
+
+main{
+     background-color: #21201e;
 }
 /* Bannière */
 
@@ -23,30 +27,83 @@ body{
     background-image: url(../image/bg-slider-06.jpg);
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 50vh;
     position: relative;
+    padding: 2rem 0;
 }
-.navigation{
+.nav{
     display: flex;
-    position: absolute;
-    background-color: none;
-    align-content: center;
+    /* align-items: center; */
     justify-content: space-around;
 }
-
+.logo h1{
+    font-family: "allura";
+}
+.barnav{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+    
+}
 .barnav ul{
     display: flex;
-    padding: ;
-
+    justify-content: space-around;
+    padding: 0 2rem;
 }
-.iconslink{
-
+.barnav li{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+}
+.iconslink a{
+    padding: 0 1rem;
+}
+.banner-content{
+    display: flex;
+    /* justify-content: center;
+    align-content: center; */
+    align-items: center;
 }
 
-
+/* contenu - STORE */
+#store{
+    display: flex;
+    justify-content: center;
+    /* background-color: white; */
+}
+.card-store{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border: 1px solid #ab753b;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    padding-top: 50px;  
+ }
+.card-content h3{
+   font-family: "allura";
+   font-size: 2em;
+}
+.card-content h4{
+    font-size: 2em;
+ }
+ .card-content p{
+    font-size: 0.8em;
+    text-align: center;
+    padding: 50px ; 
+ }
 .cercle-image {
-    width: 200px; /* Ajuste la taille de l'image */
-    height: 200px;
-    border-radius: 50%; /* Cette propriété rend l'image circulaire */
-    object-fit: cover; /* S'assure que l'image s'ajuste bien dans le cercle */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover; /* ajuste l'image dans le cercle */
+  }
+
+  .card-store img{
+    object-fit: cover;
   }
