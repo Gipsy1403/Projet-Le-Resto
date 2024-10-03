@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "allura" ;
+    src: url(../font/Allura/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "poppins" ;
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    /* background-color: #21201e; */
+    color: white;
+}
+body{
+    font-family: "poppins";
+}
+/* Bannière */
+
+#banner{
+    background-image: url(../image/bg-slider-06.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+}
+.navigation{
+    display: flex;
+    position: absolute;
+    background-color: none;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.barnav ul{
+    display: flex;
+    padding: ;
+
+}
+.iconslink{
+
+}
+
+
+.cercle-image {
+    width: 200px; /* Ajuste la taille de l'image */
+    height: 200px;
+    border-radius: 50%; /* Cette propriété rend l'image circulaire */
+    object-fit: cover; /* S'assure que l'image s'ajuste bien dans le cercle */
+  }
