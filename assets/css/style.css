@@ -25,6 +25,10 @@ body{
 main{
      background-color: #21201e;
 }
+
+footer{
+    background-color: #21201e;
+}
 /* Bannière */
 
 #banner{
@@ -122,7 +126,7 @@ main{
     object-fit: cover;
 }
 
-/* contenu - MENU */
+/* contenu - MENU **************************************/
 #menu{
     /* display: flex; */
     /* flex-direction: column; */
@@ -168,10 +172,10 @@ main{
     transform: translate(-50%);
 }
 .plats img{
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        object-fit: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .menu-item {
     width: 48%;
@@ -224,10 +228,130 @@ main{
     margin-top: 120px;
 }
 
+/* contnu - RESERVATION************************ */
+#reserv{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+}
+.open{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border: 1px solid #ab753b;
+    padding: 60px;
+    margin: 30px;
+    text-align: center;
+}
+.open h3{
+    font-family: "allura";
+    font-size: 3em;
+    color: #ab753b;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 0.2;
+}
+.open h4{
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    
+}
+.open h5{
+    font-weight: lighter;
+    font-size: 1.2em;
+    padding-bottom: 30px;
+    font-family: "baskerville";
+    color: #ab753b;
+    
+}
+.open h6{
+    font-size: 0.8em;
+    padding-bottom: 30px;
+    font-weight: lighter;
+    line-height: 0.1;
+    
+}
+.booking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+.formulaire{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "people date time"
+    "name phone email";
+    padding: 50px;
+}
+.formulair div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.people{
+    grid-area: people;
+    padding: 10px;
+    border: none;
+}
+.date{
+    grid-area: date;
+    padding: 10px;
+}
+.time{
+    grid-area: time;
+    padding: 10px;
+}
+.name{
+    grid-area: name;
+    padding: 10px;
+}
+.phone{
+    grid-area: phone;
+    padding: 10px;
+}
+.email{
+    grid-area: email;
+    padding: 10px;
+}
+
+.btn2{
+    /* background-color:black ;
+    color: white; */
+    /* padding:10px 2px; */
+    text-align: center;
+    display: inline-block;
+    font-size:2em;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn2:hover{
+    background-color: ;
+    transform: scale(1.05);
+}
+
+.btn2:active{
+    background-color: ;
+    transform: scale(0.98);
+}
 /* contenu - Gallery************************* */
 #gallery{
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
 }
 .title-gallery{
     text-align: center;
@@ -242,17 +366,17 @@ main{
 .title-gallery h4{
     text-transform: uppercase;
     font-size: 2em;
+    margin-bottom: 20px;
 }
 .pictures{
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
     justify-content: center;
     margin: auto;
 }
 .pictures img{
-    width: 300px;
-    height: 300px;
+    width: 700px;
+    height: 600px;
     object-fit: cover;
     margin: 10px;
 }
