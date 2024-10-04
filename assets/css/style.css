@@ -15,11 +15,10 @@
     padding: 0px;
     text-decoration: none;
     list-style: none;
-   
-    color: white;
 }
 body{
     font-family: "poppins";
+    color: white;
 }
 
 main{
@@ -29,27 +28,30 @@ main{
 footer{
     background-color: #21201e;
 }
-/* Bannière */
+/* Bannière *********************************************/
 
 #banner{
     background-image: url(../image/bg-slider-06.jpg);
     background-size: cover;
     background-position: center;
     height: 50vh;
-    position: relative;
+    /* position: relative; */
     padding: 2rem 0;
 }
 .nav{
     display: flex;
     justify-content: space-around;
 }
-.logo{
+.logo P{
     font-family: "allura";
+    font-size: 3em;
+    color: #ab753b;
+    font-weight: lighter;
 }
 .barnav{
     text-transform: uppercase;
     font-weight: lighter;
-    font-size: small;  
+    font-size: 1.2em;  
 }
 .barnav ul{
     display: flex;
@@ -60,12 +62,32 @@ footer{
     display: flex;
     justify-content: space-around;
     padding: 0 2rem;
+  
+}
+.barnav a{
+    color: white;
 }
 .iconslink a{
     padding: 0 1rem;
+    color: white;
 }
-.nav .banner-content{
-   text-align: center;
+.banner-content{
+    display: flex;
+}
+.banner-content h2{
+    font-family: "allura";
+    font-size: 3em;
+    color: #ab753b;
+    font-weight: lighter;
+}
+.banner-content h1{
+    font-size: 3em;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.banner-content p{
+    font-weight: lighter;
+    text-transform: uppercase;
 }
 
 /************************ contenu - STORE */
@@ -73,6 +95,7 @@ footer{
     display: flex;
     justify-content: center;
     background-color: white; 
+    width: 100%;
 }
 .card-store{
     display: flex;
@@ -125,7 +148,10 @@ footer{
 .card-store img{
     object-fit: cover;
 }
-
+.encart{
+    width: 50%;
+    object-fit: cover;
+}
 /* contenu - MENU **************************************/
 #menu{
     /* display: flex; */
@@ -134,7 +160,6 @@ footer{
     justify-content: center;
     height: 1000px;
     position: relative;
-
 }
 .nav-content h3{
     font-family: "allura";
@@ -158,7 +183,7 @@ footer{
     justify-content: space-around;
     padding: 40px;
     font-family: "baskerville";
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .plats{
@@ -172,10 +197,11 @@ footer{
     transform: translate(-50%);
 }
 .plats img{
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
+    margin-left: 30px;
 }
 .menu-item {
     width: 48%;
@@ -187,23 +213,20 @@ footer{
 .designation{
     flex-grow: 1;
     margin-left: 40px;
-
 }
 .designation h4{
-    font-size: 1.1em;
+    font-size: 1.3em;
     margin-bottom: 5px;
     font-family: "baskerville";
     font-weight: lighter;
     color: black;
-
 }
 .designation h5{ 
-    font-size: 14px;
-    color: #666;
-     
+    font-size: 18px;
+    color: #666;   
 }
 .price{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     color: #ab753b;
     margin: 0 20px;
@@ -284,6 +307,21 @@ footer{
     background-color: white;
     color: black;
 }
+.booking h3{
+    font-family: "allura";
+    font-size: 3em;
+    color: #ab753b;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 130px;
+    line-height: 0.2;
+}
+.booking h4{
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
 .formulaire{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -293,7 +331,7 @@ footer{
     "name phone email";
     padding: 50px;
 }
-.formulair div{
+.formulaire div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -326,23 +364,19 @@ footer{
 }
 
 .btn2{
-    /* background-color:black ;
-    color: white; */
-    /* padding:10px 2px; */
+    background-color:black ;
     text-align: center;
-    display: inline-block;
+    /* display: inline-block; */
     font-size:2em;
     margin: 20px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 30px;
     transition: background-color 0.3s, transform 0.2s;
 }
-
 .btn2:hover{
     background-color: ;
     transform: scale(1.05);
 }
-
 .btn2:active{
     background-color: ;
     transform: scale(0.98);
@@ -399,6 +433,207 @@ footer{
     transform: scale(1.05);
 }
 
-/* *********************contenu - CITATION */
+/* *********************contenu - SHOP */
+#shop{
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    width: 100%;
+}
 
+.titreboutique{
+    text-align: center;
+}
+.titreboutique h3{
+    font-family: "allura";
+    font-size: 3em;
+    color: #ab753b;
+    font-weight: lighter;
+    line-height: 0.2;
+}
+.titreboutique h4{
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.titleshop{
+    display: flex;
+    width: 50%;
+}
+.shopcontent{
+    display: flex;
+    width: 50%;
+
+}
+.photoshop{
+    display: flex;
+    width: 150px;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 25%;
+}
+.photoshop2{
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 50%;
+}
+.titledate{
+    width: 110px;
+    height: 110px;
+    background-color: black;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(22%,-50%);
+    
+}
+.titledate2{
+    width: 110px;
+    height: 110px;
+    background-color: black;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(22%,-50%);
+    
+}
+.titledate h5{
+    font-size: 1.8em;
+   
+}
+.titledate2 h5{
+    font-size: 1.8em;
+   
+}
+.ticket{
+    display: flex;
+    background-color: white;
+    width: 25%
+}
+.ticket2{
+    display: flex;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    left: 50%;
+   
+
+}
+.ticket h4{
+    color: black;
+    font-size: 1.2em;
+}
+.ticket2 h4{
+    color: black;
+    font-size: 1.2em;
+}
+.ticket p{
+    color: gray;
+    font-size: 0.7em;
+    font-weight: lighter;
+
+}
+.ticket2 p{
+    color: gray;
+    font-size: 0.7em;
+    font-weight: lighter;
+
+}
+/* *************************CONTENU - CITATION */
+#citation{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.cercle{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* background-position: center; */
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,-90%);
+   
+
+}
+.citation{
+    color: grey;
+    background-color: white;
+    text-align: center;
+    padding: 100px 50px;
+    margin: auto;
+    position: relative;
+    width: 80%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.citation::before{
+    content: "";
+    position:absolute;
+
+}
+/* **************FOOTER*************************** */
+footer{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+.resto{
+    width: 50%;
+    background-color: black;
+    padding-left: 200px;
+}
+.resto h3{
+    font-family: "allura";
+    font-size: 3em;
+    color: #ab753b;
+    font-weight: lighter;
+    line-height: 0.2;
+    margin: 50px 0;
+}
+.resto p{
+    color: grey;
+    font-size: 0.8em;
+    width: 80%;
+    padding-bottom: 50px;
+}
+.newsletter{
+    width: 50%;
+    text-align: center;
+}
+.follow{
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+.follow a{
+    color: grey;
+    display: flex;
+    flex-direction: row;
+
+}
+
+@media screen and (max-width: 1242px;){
+    .formulaire div{
+        flex-direction:column;
+    }
+} 
 

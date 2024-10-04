@@ -8,11 +8,12 @@
     <title>Accueil RESTO</title>
 </head>
 <body>
+    <!-- -------------------ENTETE---------------- -->
    <header id="banner">
         <nav class="navigation">
             <div class="nav">
                 <div class="Logo">
-                    <h1>Resto</h1>
+                    <P>Resto</P>
                 </div>
                 <div class="barnav">
                     <ul>
@@ -31,11 +32,12 @@
                     <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="banner_content">
-                <h2>Welcome to</h2>
-                <h1>The Resto</h1>
-                <p>We serve only the freshest ingredients !</p>
-            </div>
+        <div class="banner_content">
+            <h2>Welcome to</h2>
+            <h1>The Resto</h1>
+            <img src="assets/image/ic-plate.png" alt="Picto couverts">
+            <p>We serve only the freshest ingredients !</p>
+        </div>
         </nav>
    </header>
    <main>
@@ -51,7 +53,7 @@
                     <p>Russell Stephens <span>Chef cook</span></p>
                 </div>
             </article>
-            <img src="assets/image/dish-gallery-06.jpg" alt="Photo d'une préparation d'un plat">
+            <img class="encart"src="assets/image/dish-gallery-06.jpg" alt="Photo d'une préparation d'un plat">
         </section>
     <!-- contenu - menu -->
         <section id="menu">
@@ -210,80 +212,79 @@
             </div>
             <a class="btn" href="#">view all gallery</a>
           </section>
-          <!-- contenu - event -->
-           <section id="shop">
-            <div>
+          <!-- contenu - shop -->
+        <section id="shop">
+            <div class="titreboutique">
                 <h3>Upcooming</h3>
-                <h2>Our event</h2>
+                <h4>Our event</h4>
+                <img src="assets/image/ic-plate.png" alt="Picto couverts">
             </div>
-            <img src="" alt="">
-            <div>
-                <article>
-                    <div>
-                        <img src="" alt="">
-                        <div>
+            <div class="titleshop">
+                <article class="shopcontent">
+                    <div class="photoshop">
+                        <img src="assets/image/event-01.jpg" alt="Gros plan du bouchon d'une bouteille d'alcool">
+                        <div class="titledate">
                             <h5>08 <span>July</span></h5>
                         </div>
                     </div>
-                    <div>
+                    <div class="ticket">
                         <h4>Night Inspirescu Party</h4>
-                        <h5>Restaurant Resto</h5>
-                        <h5>10:00 pm - 6:00 am</h5>
+                        <p>Restaurant Resto <span>10:00 pm - 6:00 am</span></p>
                         <a href="#"></a><img src="" alt="">
                     </div>
                 </article>
-                <article>
-                    <div>
-                        <img src="" alt="">
-                        <div>
+                <article class="shopcontent">
+                    <div class="photoshop">
+                        <img src="assets/image/event-02.jpg" alt="Pyrotechnique dans un pot en verre">
+                        <div class="titledate">
                             <h5>08 <span>July</span></h5>
                         </div>
                     </div>
-                    <div>
+                    <div class="ticket">
                         <h4>Dj Robag Ruhme</h4>
-                        <h5>Restaurant Resto</h5>
-                        <h5>10:00 pm - 6:00 am</h5>
+                        <p>Restaurant Resto<span>10:00 pm - 6:00 am</span><p>
                         <a href="#"></a><img src="" alt="">
                     </div>
                 </article>
             </div>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <img src="" alt="">
-                        <div>
-                            <h5>08 <span>July</span></h5>
-                        </div>
+            <article class="shopcontent">
+                <div class="photoshop2">
+                    <img src="assets/image/event-03.jpg" alt="Plusieurs verres d'alcool">
+                    <div class="titledate2">
+                        <h5>08 <span>July</span></h5>
+                    </div>
+                </div>
+                <div class="ticket2">
                     <h4>Thousands celebrities at Johnnie Night</h4>
-                    <h5>Restaurant Resto</h5>
-                    <h5>10:00 pm - 6:00 am</h5>
+                    <p>Restaurant Resto<span>10:00 pm - 6:00 am</span></p>
                     <a href="#"></a><img src="" alt="">
                 </div>
-            </div>
-           </section>
+            </article>
+        </section>
            <!-- contenu - citation -->
-            <section>
-                <article>
-                    <img src="assets/image/avatar-02.jpg" alt="Photo d'une passionnée">
-                    <div class="citation">
-                        <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur ducimus maiores vitae voluptates dolorum expedita labore quibusdam aspernatur, tempore quam voluptatem fuga culpa necessitatibus harum excepturi iste laboriosam, veniam nostrum?"</p>
-                        <h4>Russel Stephens</h4>
-                        <h5>CEO - HeadPassions</h5>
-                    </div>
+           
+           <section id="citation">
+                <article class="citation">
+                    <img class="cercle" src="assets/image/avatar-02.jpg" alt="Photo d'une passionnée"> 
+                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur ducimus maiores vitae voluptates dolorum expedita labore quibusdam aspernatur, tempore quam voluptatem fuga culpa necessitatibus harum excepturi iste laboriosam, veniam nostrum?"</p>
+                    <h4>Russel Stephens</h4>
+                    <h5>CEO - HeadPassions</h5>
                 </article>
             </section>
    </main>
    <footer>
-    <div>
+    <!-- -------------------FOOTER---------------------------- -->
+    <div class="resto">
         <h3>Resto</h3>
         <P>Acclaimed former Nightwood Chef Jason Vincent is back in a professionnal kitchen after opening his first own restaurant in a tiny space in Logan Square. house/maide pastas.</P>
     </div>
-    <div>
+    <div class="newsletter">
         <form action="#">
-            <!-- Newsletter mail puis flèche envoi -->
+            <label for="newsletter">Newsletter</label><br>
+            <input type="email" placeholder="Your email address">
         </form>
-        <div>
-            <h3>Follow us :</h3>
+        <div class="follow">
+            <p>Follow us :</p>
             <div>
                 <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://x.com/?lang=fr"><i class="fa-brands fa-square-twitter"></i></a>
